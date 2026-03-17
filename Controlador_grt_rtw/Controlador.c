@@ -9,7 +9,7 @@
  *
  * Model version              : 1.13
  * Simulink Coder version : 24.2 (R2024b) 21-Jun-2024
- * C source code generated on : Tue Mar 17 19:49:27 2026
+ * C source code generated on : Tue Mar 17 20:26:27 2026
  *
  * Target selection: grt.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -56,7 +56,7 @@ void Controlador_step(void)
    *  Inport: '<Root>/Thrust set point (N)'
    *  Inport: '<Root>/Thust medido (N)'
    */
-  rtb_IntegralGain = Controlador_U.ThrustsetpointN - Controlador_U.ThustmedidoN;
+  rtb_IntegralGain = Controlador_U.ThrustsetpointN - Controlador_U.ThrustmedidoN;
 
   /* Gain: '<S42>/Filter Coefficient' incorporates:
    *  DiscreteIntegrator: '<S34>/Filter'
@@ -204,7 +204,7 @@ void Controlador_initialize(void)
   {
     rtliSetLogXSignalInfo(Controlador_M->rtwLogInfo, (NULL));
     rtliSetLogXSignalPtrs(Controlador_M->rtwLogInfo, (NULL));
-    rtliSetLogT(Controlador_M->rtwLogInfo, "tout");
+    rtliSetLogT(Controlador_M->rtwLogInfo, "");
     rtliSetLogX(Controlador_M->rtwLogInfo, "");
     rtliSetLogXFinal(Controlador_M->rtwLogInfo, "");
     rtliSetLogVarNameModifier(Controlador_M->rtwLogInfo, "rt_");

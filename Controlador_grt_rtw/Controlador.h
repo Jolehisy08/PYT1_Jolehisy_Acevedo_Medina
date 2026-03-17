@@ -9,7 +9,7 @@
  *
  * Model version              : 1.13
  * Simulink Coder version : 24.2 (R2024b) 21-Jun-2024
- * C source code generated on : Tue Mar 17 19:49:27 2026
+ * C source code generated on : Tue Mar 17 20:26:27 2026
  *
  * Target selection: grt.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -86,12 +86,12 @@ typedef struct {
 /* External inputs (root inport signals with default storage) */
 typedef struct {
   real_T ThrustsetpointN;              /* '<Root>/Thrust set point (N)' */
-  real_T ThustmedidoN;                 /* '<Root>/Thust medido (N)' */
+  real_T ThrustmedidoN;                /* '<Root>/Thust medido (N)' */
 } ExtU_Controlador_T;
 
 /* External outputs (root outports fed by signals with default storage) */
 typedef struct {
-  real_T Sealdecontrol;                /* '<Root>/Señal de control' */
+  real_T Sealdecontrol;                /* '<Root>/Seï¿½al de control' */
 } ExtY_Controlador_T;
 
 /* Parameters (default storage) */
@@ -278,4 +278,4 @@ extern RT_MODEL_Controlador_T *const Controlador_M;
  * '<S55>'  : 'Turbine_JAM/Controlador/Discrete PID Controller/preInt Signal/Internal PreInt'
  * '<S56>'  : 'Turbine_JAM/Controlador/Discrete PID Controller/preSat Signal/Forward_Path'
  */
-#endif                                 /* Controlador_h_ */
+#endif                                 
