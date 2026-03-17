@@ -1,6 +1,8 @@
-# Proyecto FADEC - Validación SIL de Turbina
+# Proyecto Controlador - Validación SIL de Turbina
 
-Este repositorio contiene el código C++ generado a partir de un Gemelo Digital en Simulink para el control de empuje de una turbina JAM.
+Autor: Jolehisy Acevedo Medina
+
+Este repositorio contiene el código C++ generado a partir de un Gemelo Digital en Simulink para el control de empuje de una turbina.
 
 ## Estructura del Proyecto
 - `Controlador.c / .h`: Algoritmo de control PID exportado.
